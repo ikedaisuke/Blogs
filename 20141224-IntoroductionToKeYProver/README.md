@@ -1,7 +1,7 @@
 # はじめに
 
 この文章は
-[Theorem Prover Advent Calender 2014](http://qiita.com/advent-calendar/2014/theorem_prover)
+
 の 12/24(水) の記事のために書かれました（たぶんね）。
 
 ## KeY-project とは
@@ -110,15 +110,15 @@ public class Add {
 
 KeY Prover を起動すると、次のようなウィンドウが現れます：
 
-![img/Add/start.png](20141224-IntroductionToKeYProver/img/Add/start.png?raw=true)
+![img/Add/start.png](/20141224-IntroductionToKeYProver/img/Add/start.png?raw=true)
 
 この小さいウィンドウをリサイズして大きくしておきます。
 
-![img/Add/resized.png](20141224-IntroductionToKeYProver/img/Add/resized.png?raw=true)
+![img/Add/resized.png](/20141224-IntroductionToKeYProver/img/Add/resized.png?raw=true)
 
 #### ファイルをロード
 
-![img/Add/prepare.png](20141224-IntroductionToKeYProver/img/Add/prepare.png?raw=true)
+![img/Add/prepare.png](/20141224-IntroductionToKeYProver/img/Add/prepare.png?raw=true)
 
 左の Contract Targets に事後条件を記述したメソッドが現れます。
 今回は add だけですが、複数のメソッドの証明をするときには、個々を選択する必要があります。
@@ -130,7 +130,7 @@ Start Proof のボタンを押すと、いよいよ自動証明を行う前の�
 
 #### 自動証明を始める
 
-![img/Add/go.png](20141224-IntroductionToKeYProver/img/Add/go.png?raw=true)
+![img/Add/go.png](/20141224-IntroductionToKeYProver/img/Add/go.png?raw=true)
 
 左上のいかにも処理を始めそうなボタンを押せば、自動証明が始まります。
 その右横に用いる SMT ソルバの選択ボタンがあります。ここで取り替えができます。
@@ -157,9 +157,9 @@ Proof Search Strategy ボタンを押すと、SMT ソルバに与えるメモリ
 
 証明が成功すると、次の二つのウィンドウが現れます：
 
-![img/Add/proved.png](20141224-IntroductionToKeYProver/img/Add/proved.png?raw=true)
+![img/Add/proved.png](/20141224-IntroductionToKeYProver/img/Add/proved.png?raw=true)
 
-![img/Add/result.png](20141224-IntroductionToKeYProver/img/Add/result.png?raw=true)
+![img/Add/result.png](/20141224-IntroductionToKeYProver/img/Add/result.png?raw=true)
 
 最初のウィンドウには、実行時間の統計情報などが現れます。
 結果のウィンドウには、
