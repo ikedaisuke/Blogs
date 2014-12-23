@@ -372,6 +372,8 @@ public class ElemIndex {
 ## SMT ソルバ
 ## Taclets
 
+# プログラムは書いた通りに動く
+
 # おわりに
 
 筆者の Twitter account は @ikegami__ です。
