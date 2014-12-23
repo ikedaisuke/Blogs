@@ -7,7 +7,13 @@
 ## KeY-project とは
 
 KeY-project とはプログラム、特に Java (の subset) プログラムに対する形式手法のための
-ツール群です。以下のツールが開発されているようです：
+ツール群です。The KeY Book (2007) によれば、以下の大学の共同プロジェクトです：
+
+* University of Karlsruhe
+* Chalmers University of Technology in Göteborg
+* University of Koblenz-Landau
+
+執筆時では以下のツールが開発されているようです：
 
 * KeY Prover (for Java Card)
 * KeY-Hoare
@@ -18,6 +24,7 @@ KeY-project とはプログラム、特に Java (の subset) プログラムに�
 本稿では Key Prover の簡単な紹介を行います。
 その他のツールについては、筆者の能力の限界＆アドベントカレンダーの締切のせいもあり、
 紹介することができません。
+また、KeY Prover の Eclipse IDE plugin や Boland's together CASE tool suite も試していません。
 
 概要を掴むには、
 [本家のページ](http://www.key-project.org/)
