@@ -9,6 +9,6 @@ Issues here, or tweets to @ikegami__ are welcome.
 Links
 =====
 
-* [twitter](http://twitter.com/ikegami__)
+* [twitter](https://twitter.com/ikegami__)
 * [tumblr](http://sovmoess.tumblr.com/)
 * [my blog (too old)](http://madscientist.jp/~ikegami/diary/)
