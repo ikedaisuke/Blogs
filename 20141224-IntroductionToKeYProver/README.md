@@ -1,7 +1,7 @@
 # はじめに
 
 この文章は
-
+[Theorem Prover Advent Calendar 2014](http://qiita.com/advent-calendar/2014/theorem_prover)
 の 12/24(水) の記事のために書かれました（たぶんね）。
 
 ## KeY-project とは
