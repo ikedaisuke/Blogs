@@ -719,7 +719,9 @@ Key Prover だけでなく KeY project の目標は The KeY book によれば
 
 > Long gone are the days when program verification was a task carried out
 > merely by hand with paper and pen.
+> 
 > (snip)
+> 
 > In addition to the engineering effort required to build a program verification
 > tool, building and using such a tool require many skills from computer science,
 > logic, and mathematics. To advance the field of program verification, we must
