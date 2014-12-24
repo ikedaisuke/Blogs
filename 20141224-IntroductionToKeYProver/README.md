@@ -611,6 +611,80 @@ KeY Prover は term をクリックしてメニューがでたり、ドラッグ
 
 # プログラムは書いた通りに動く
 
+KeY Prover の説明を（いいかげんに）書いていたら、
+読者によっては誤解を招く部分もあるかもしれないと危惧したので余計なコメントも書きます。
+Advent の趣旨からは外れるかもしれませんが、なんとかまとめるので聞いてやってください。
+
+Key Prover だけでなく KeY project の目標は The KeY book によれば
+
+> Long gone are the days when program verification was a task carried out
+> merely by hand with paper and pen.
+> (snip)
+> In addition to the engineering effort required to build a program verification
+> tool, building and using such a tool require many skills from computer science,
+> logic, and mathematics. To advance the field of program verification, we must
+> facilitate the acquisition of these skills for our colleagues, students, and
+> other tool builders.
+> (snip)
+> The ultimate goal of program verification is not the theory behind the tools
+> or the tools themselves, but the application of the theory and tools in the
+> software engineering process. Our society relies on the correctness of a vast
+> and growing amount of software. Improving the software engineering process is
+> an important, long-term goal with many steps. Two of those steps are the KeY
+> tool and this KeY book.
+
+と締めくくられています。このことは、中島先生の「形式手法入門」にある、
+「高い信頼性を達成する手段」の説明と共通しています。
+
+> 前提 : 設計方法論 + 数理論理 + ドメイン知識
+> 形式手法 = 形式仕様言語 + 形式検証の方法 + 支援ツール
+> 結果 : 求められる信頼性の基準
+
+> 形式手法が工学的な道具となるには、
+> 形式仕様作成ならびに形式検証といった作業を支援するツールが必須となる。
+> 特に、記述の形式検証に関わる技術は形式手法の特徴であり、
+> 適切な支援ツールの開発が実用化の要となる。
+> 人手の証明に頼る方法では工学的な道具になり得ない。
+
+両者に共通するのは、支援ツールが大事ということです。
+KeY Prover の持つ、プログラムにコメントを書いてボタンを押すだけという automation の機能は
+十分に工学的な道具になっているでしょう。
+
+それは認めましょう。しかし、プログラム検証の ultimate goal を達成するために、
+現状の形式手法というアプローチは果たして有効なのか？という疑問を持っています。
+計算機の力を借りて証明しなくても、技術を持ったプログラマが集まってレビューすればいいんじゃないの？
+（ついでにテストや動的な契約プログラミングで穴を探す）
+コストが高いというのは工学的な発想ではないのではないかなー。
+
+theorem prover を触ったり理解したり理論の発展を眺めること自体は楽しいんですよ。
+
+## プログラムは信頼できなければならないか
+
+プログラムは仕様と実装が複雑になるにつれて、人間が作ろうとしたものとできあがったものとの間に、
+ずれが生ずる。これはプログラムに限ったことではなく、全ての創作に言えることである。
+
+プログラムは書いたものが、アーキテクチャの上で、書いた通りに動く（コンパイラのバグ等細かいことは言わない）。
+これは現象である。「プログラムは信頼できなければならない」というフレーズには、
+善悪・希望の問題が含まれている。少しでも気に入らぬことがあるとすぐけしからんとくる。
+プログラムは今や各人の生活や安危に直接にひびくことがあるから、
+単に現象を後から観察するだけですませることはできない。
+善悪の判断を入れるのは当然である、という人もいるかもしれない。
+ましてエンジニアならそうであろう。
+しかし、けしかるけしからんの一歩前に現象をよく見るという見方もあってよいのではないか。
+判断はその次に続ければよい。
+
+プログラムの高信頼性とはなんであろうか。99% のプログラムにバグを生じさせない技術が将来できたとしても、
+たったひとつのバグが起きれば信頼など吹き飛んでしまう。
+
+プログラム検証の目指す ultimate goal は高い。しかも、その目標を達成する技術が学際的・属人的であるので、
+研究の説明をするときに、つい「高信頼性を達成するために XXXX …」という前書きがつく。
+
+KeY Prover は十分に完成されたツールであり、使いやすいインターフェイスを備え、
+(わりと)最新の数理技術(Java Card DL)を背景に持つ。
+にもかかわらず、検証できるプログラムはとても少ない。
+
+まず、現実の客観的な観察が必要であろう。
+
 # おわりに
 
 筆者の Twitter account は @ikegami__ です。
