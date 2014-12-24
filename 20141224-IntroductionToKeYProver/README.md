@@ -96,7 +96,7 @@ Java Card は Java のサブセットです。
 
 筆者は Java と Java Card の違いを理解していませんが、Java のフルセットを検証するのは無茶だろうということは推測できます。
 
-persistent/tranient memory model と atomic transactions の検証ができるそうです。
+persistent/transient memory model と atomic transactions の検証ができるそうです。
 
 あるメソッドを KeY Prover で検証するためには、そのメソッドが呼び出しているメソッド全てが検証済みでなければなりません。
 従って、標準ライブラリ（例えば `import java.io.*`）とかを使っているメソッドは現時点では検証できません。
