@@ -767,8 +767,8 @@ KeY
 </ul>
 </dd>
 <dt>
-</dt>
 JML
+</dt>
 <dd>
 <ul>
 <li> http://www.eecs.ucf.edu/~leavens/JML/jmldbc.pdf
