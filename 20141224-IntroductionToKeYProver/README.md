@@ -538,6 +538,23 @@ public class ElemIndex {
 この文中には十分に説明していなかったキーワードや技術がたくさんでてきたので、
 そろそろこの節で簡単な説明をします。
 
+## Hoare logic
+
+[Hoare](http://en.wikipedia.org/wiki/Tony_Hoare) は人名です。
+[Hoare logic](http://en.wikipedia.org/wiki/Hoare_logic) は別名 Floyd-Hoare logic とも呼ばれ、
+整数演算と代入、if、連接、そして
+while ループのみでできあがる簡単な手続きプログラミング言語(WHILE プログラム)の検証を行うことができます。
+
+日本語の文献はたくさんありますが、筆者が最近読んだものは
+
+* [数学セミナー 2014年11月号 鹿島亮 ホーア論理・ダイナミック論理 p.26 - 31](http://www.nippyo.co.jp/magazine/6653.html)
+* [形式手法入門 ロジックによるソフトウェア設計](www.amazon.co.jp/dp/4274211886/)
+
+です。オンラインで手に入る文献も探せばあるでしょう。
+
+Hoare logic の特徴は、プログラムに対して事前条件と事後条件を人間が与えること、
+そしてループ不変量やループ変量も人間があたえることで、事前条件と事後条件を導出できることにあります。
+soundness や completeness が成り立つことについては、専門的な文献をあたってください。
 ## sequent calculus
 ## SMT ソルバ
 ## Taclets
