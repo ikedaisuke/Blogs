@@ -555,6 +555,23 @@ while ループのみでできあがる簡単な手続きプログラミング�
 Hoare logic の特徴は、プログラムに対して事前条件と事後条件を人間が与えること、
 そしてループ不変量やループ変量も人間があたえることで、事前条件と事後条件を導出できることにあります。
 soundness や completeness が成り立つことについては、専門的な文献をあたってください。
+
+### first order dynamic logic
+
+Hoare logic では、例えば配列を扱うことを考えていません。
+Hoare logic の拡張はいろいろあるらしいですが（筆者は知りません）、
+そのひとつが first order dynamic logic です。
+
+* [数学セミナー 2014年11月号 鹿島亮 ホーア論理・ダイナミック論理 p.26 - 31](http://www.nippyo.co.jp/magazine/6653.html)
+* [Dynamic logic (Wikipedia:en)](http://en.wikipedia.org/wiki/Dynamic_logic_%28modal_logic%29)
+* [Reasoning about Programs with Dynamic Logic - Part II (slide:pdf)](https://www.tu-braunschweig.de/Medien-DB/isf/sse/12_dynamiclogiccalculus_vl.pdf)
+
+Wikipedia を見てもらえれば分かりますが、説明するだけの紙面はここにはありません。
+例えば上記の Schaefer 先生のスライドでも見てください。
+
+鹿島先生の記事に propositional dynamic logic の説明があります。
+first order dynamic logic はそれに \\forall と \\exists が付け加えられたようなものです（いい加減な説明）。
+
 ## sequent calculus
 ## SMT ソルバ
 ## Taclets
