@@ -598,6 +598,16 @@ KeY Prover が用いる Java Card DL に対する導出方法は sequent calculu
 
 前にも書きましたが、筆者は SMT solver について何も知りません。
 
+## taclets
+
+Java Card DL の sequent calculus に用いる推論規則は taclets 記法で書きます：
+
+* [Taclets and the KeY Prover(pdf)](http://www.informatik.uni-bremen.de/uitp03/entcs/04-Giese.pdf)
+* [Taclets: a new paradigm for constructing interactive theorem provers](http://www.rac.es/ficheros/doc/00147.pdf)
+
+KeY Prover は term をクリックしてメニューがでたり、ドラッグアンドドロップで規則を適用したり、
+ユーザが新しく taclet を追加したりして open goals を解決できるそうです。
+が、試していません。
 
 # プログラムは書いた通りに動く
 
