@@ -1,12 +1,12 @@
 # spec
 
-MacOSX Mavericks 10.9.5
-2.53 GHz Intel Core 2 Duo
-8 GB 1067 MHz DDR3
+    MacOSX Mavericks 10.9.5
+    2.53 GHz Intel Core 2 Duo
+    8 GB 1067 MHz DDR3
 
-Key Prover 2.2.3
-Z3 4.3.2
-Yices 2.2.2
+* Key Prover 2.2.3
+* Z3 4.3.2
+* Yices 2.2.2
 
 # proved: statistics
 
