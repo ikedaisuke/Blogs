@@ -283,7 +283,10 @@ Start Proof のボタンを押すと、いよいよ自動証明を行う前の�
 ![img/Add/go.png](/20141224-IntroductionToKeYProver/img/Add/go.png?raw=true)
 
 左上のいかにも処理を始めそうなボタンを押せば、自動証明が始まります。
-その右横に用いる SMT ソルバの選択ボタンがあります。ここで取り替えができます。
+
+その右横に用いる SMT ソルバの選択ボタンがあります。
+Java Card DL + sequent calculus とは別に、SMT ソルバを用いたいときはそちらを押します。
+
 左には 0 OPEN GOAL があります。
 右には Current Goal があります。
 Java では実行時例外が発生する可能性があるため、
@@ -331,10 +334,21 @@ public static /*@ pure @*/ int add(int x, int y)
 今回の検証にはループを持つプログラムが全体にないので必要ありませんが、
 覚えておくとよいです。
 
-今回の事例では推論は SMT ソルバを使わなくても sequent calculus でできそうです。
-実際 Proof Statistics を注意深く見ると SMT solver apps: 0 と書いてあります。
-本節は、事後条件の書き方を紹介することが目的でした。
+今回の事例では推論は sequent calculus でできました。
 
+一方、 SMT ソルバにやらせると
+
+* Z3 : found a counter example
+* Yices : timeout
+* cvc3 : found a counter example
+
+となります。これが果たして KeY Prover のサポートするバージョンでなかったせいなのか、
+他の原因があるのかよくわかりません。
+
+[src/Add/README.md](src/Add/README.md) に Z3 と Yices の入力と出力を書いておいたので、
+識者に検証していただきたいです。
+
+以上、本節は、事後条件の書き方を紹介することが目的でした。
 本節以降は、ウィンドウなどの画面を引用しません（どれも似たようなものなので）。
 
 ### ElemIndex
