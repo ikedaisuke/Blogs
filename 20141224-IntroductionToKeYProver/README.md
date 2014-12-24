@@ -572,6 +572,14 @@ Wikipedia を見てもらえれば分かりますが、説明するだけの紙�
 鹿島先生の記事に propositional dynamic logic の説明があります。
 first order dynamic logic はそれに \\forall と \\exists が付け加えられたようなものです（いい加減な説明）。
 
+#### Java Card DL
+
+* [Introduction to JavaCard Dynamic Logic (slide:pdf)](https://lfm.iti.kit.edu/download/javaDL.pdf)
+* [08: Reasoning about Java Programs with Dynimaic Logic (slide:pdf)](http://symbolaris.com/course/dcd/08-JavaDL.pdf)
+
+first order dynamic logic の説明も満足にしていないのに、Java Card DL を説明するのはそもそも無理があります。
+Java Card DL は first order dynamic logic のバリアントだそうです。
+
 ## sequent calculus
 ## SMT ソルバ
 ## Taclets
