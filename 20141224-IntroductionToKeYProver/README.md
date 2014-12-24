@@ -45,6 +45,7 @@ JML の代わりに Object Constraint Language (OCL) も使うことができる
 筆者が理解した Key Prover の構成は以下のようになります：
 
 ![img/KeyProver1.png](/20141224-IntroductionToKeYProver/img/KeyProver1.png?raw=true)
+
 ![img/KeyProver2.png](/20141224-IntroductionToKeYProver/img/KeyProver2.png?raw=true)
 
 利用者は Java Card のプログラムと JML 仕様記述で書かれたアノテーションを準備します。
