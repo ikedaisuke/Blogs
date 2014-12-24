@@ -103,6 +103,30 @@ persistent/tranient memory model と atomic transactions の検証ができる�
 まずは簡単なメソッドを検証してみましょう。
 
 ## JML
+
+Java Modeling Language(JML) は Java プログラムに対する仕様を記述する言語です。
+Java プログラム中にコメントとして書きます。
+
+JML でメソッドの
+
+* 事前条件
+* 事後条件
+* ループ不変量、ループ変量
+
+などを書きます。その他にもいろいろ書きます。
+
+* [The Java Modeling Language](http://www.eecs.ucf.edu/~leavens/JML//index.shtml)
+* [JML Reference Manual](http://www.eecs.ucf.edu/~leavens/JML/jmlrefman/jmlrefman.html#SEC_Top)
+* [Java Modeling Language (wikipedia:en)](http://en.wikipedia.org/wiki/Java_Modeling_Language)
+
+上記の JML Reference Manual は非常に充実していて便利ですが，
+簡単なプログラムの検証に必要な記述はごくわずかですみます。
+Wikipedia の記述にある知識だけでもあると便利です。
+
+KeY Prover は JML を拡張した記法も用意しているらしいのですが、筆者は把握していません。
+
+本稿では JML の詳細に深入りせずにシンプルな具体例を提示します。
+
 ## 具体例
 
 # Key Prover のインストール
