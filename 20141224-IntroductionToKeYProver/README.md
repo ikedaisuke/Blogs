@@ -122,12 +122,14 @@ JML でメソッドの
 * [The Java Modeling Language](http://www.eecs.ucf.edu/~leavens/JML//index.shtml)
 * [JML Reference Manual](http://www.eecs.ucf.edu/~leavens/JML/jmlrefman/jmlrefman.html#SEC_Top)
 * [Java Modeling Language (wikipedia:en)](http://en.wikipedia.org/wiki/Java_Modeling_Language)
+* [KeY-Cheat Sheet](http://i12www.iti.uni-karlsruhe.de/~key/download/keycheat.pdf)
 
 上記の JML Reference Manual は非常に充実していて便利ですが，
 簡単なプログラムの検証に必要な記述はごくわずかですみます。
 Wikipedia の記述にある知識だけでもあると便利です。
 
 KeY Prover は JML を拡張した記法も用意しているらしいのですが、筆者は把握していません。
+KeY Cheat Sheet も参照してください。
 
 本稿では JML の詳細に深入りせずにシンプルな具体例を提示します。
 
