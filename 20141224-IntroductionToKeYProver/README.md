@@ -67,6 +67,7 @@ semi-automatic な検証ツールであるというのは、いくつかの人�
     * ループ変量は十分か
 * Java Card DL の限界は？ (timed out/out of memory)
     * open goal を証明するために利用者が追加する axiom は何か？
+	    * axiom を taclet で記述するには？
 * SMT ソルバの限界は？ (timed out/out of memory)
 * 証明しやすいプログラムと証明しにくいプログラムの違いは？
 
