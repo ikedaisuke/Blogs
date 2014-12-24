@@ -590,7 +590,14 @@ Java Card DL は first order dynamic logic のバリアントだそうです。
 KeY Prover が用いる Java Card DL に対する導出方法は sequent calculus であるという説明を読みました。
 
 ## SMT ソルバ
-## Taclets
+
+検索したらいろいろでてきたので、適当に並べてみました：
+
+* [SMT (wikipedia:en)](http://en.wikipedia.org/wiki/Satisfiability_Modulo_Theories)
+* [すえひろがりっっっっ! SMT solver 入門](http://d.hatena.ne.jp/suer/20081125/1227634082)
+
+前にも書きましたが、筆者は SMT solver について何も知りません。
+
 
 # プログラムは書いた通りに動く
 
