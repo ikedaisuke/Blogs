@@ -739,3 +739,30 @@ semi-automatic 証明支援系に SMT ソルバをつなぐ」というツール
 今となっては関連した話を聞いていたのだなあという話。
 
 # 参考文献
+
+test GitHub flavored markup sanitizing
+
+<dl>
+<dt>
+term
+</dt>
+<dd>
+desc
+</dd>
+<dt>
+term
+</dt>
+<dd>
+<ul>
+<li> foo
+<li> bar
+</ul>
+</dd>
+</dl>
+
+
+
+
+
+
+
