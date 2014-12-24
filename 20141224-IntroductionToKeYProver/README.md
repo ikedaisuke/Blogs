@@ -620,9 +620,9 @@ max2 のループ不変量から事前条件/事後条件を証明すること�
 実際 KeY Prover でベンチマークを取ってみました：
 
 * max1
-** ![img/Max/stat1.png](/20141224-IntroductionToKeYProver/img/Max/stat1.png?raw=true)
+    * ![img/Max/stat1.png](/20141224-IntroductionToKeYProver/img/Max/stat1.png?raw=true)
 * max2
-** ![img/Max/stat2.png](/20141224-IntroductionToKeYProver/img/Max/stat2.png?raw=true)
+    * ![img/Max/stat2.png](/20141224-IntroductionToKeYProver/img/Max/stat2.png?raw=true)
 
 誤差の範疇かもしれませんが、max2 のほうが証明が速く済んでいるようです。
 
