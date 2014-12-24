@@ -129,13 +129,57 @@ KeY Prover は JML を拡張した記法も用意しているらしいのです�
 
 # Key Prover のインストール
 
+筆者の環境は MacOSX Mavericks です。その他の環境では確かめていないので、あらかじめご了承ください。
+
+KeY Prover をインストールするには、
+
+1. Java Runtime (JRE) をあらかじめ準備し
+2. (download)[http://www.key-project.org/download/] を読んで
+3. README-(version).txt を読んで
+4. KeY-(version).tgz or KeY-(version).zip をダウンロード、展開し
+5. required libraries をダウンロードして、適切な場所に展開します
+
+難しいことは何もないと思いますが、よく読まないと step 5. required libraries を忘れます。
+
 ## SMT ソルバのインストール
+
+KeY Prover は Java Card DL の sequent calculus の補助ツールとして SMT ソルバを使います。
+KeY Prover はサポートする SMT ソルバのバージョンも指定します。
+「このバージョンの SMT ソルバは動作を保証しません（警告）」が出ます。
+が、筆者は気にせずに最新のバージョンを使ってみました。
+
+現在サポートしている SMT ソルバのうち、次のものを試しました：
 
 ### Z3
 
+[Z3](http://z3.codeplex.com/) は、
+特に KeY Prover で counter examples を出力するときに必要なのでインストールを勧めます。
+
+Windows にはバイナリがありますが、Linux/MacOSX ではソースコードからビルドする必要があります。
+
+[Z3 latest](http://z3.codeplex.com/SourceControl/latest)
+の README をよく読めば難しいことは何もないでしょう。
+
 ### Yices
 
+[Yices](http://yices.csl.sri.com/) は各種プラットフォームで動くバイナリを配布しています。
+
 ### cvc3
+
+[cvc3](http://www.cs.nyu.edu/acsys/cvc3/) も各種プラットフォームで動くバイナリを配布しています。
+
+バイナリをダウンロードすることを勧めます。
+
+Gentoo Prefix に masked package があったので筆者はそちらを無理矢理インストールしました。
+Z3 や yices の ebuild は見つからなかったので、暇ができたらそのうち Overlay に作ります。
+
+### Simplify
+
+一方、
+
+[Simplify](http://kindsoftware.com/products/opensource/Simplify/)
+
+はインストールの方法がよくわからなかったので、試していません。
 
 ## 具体例
 
