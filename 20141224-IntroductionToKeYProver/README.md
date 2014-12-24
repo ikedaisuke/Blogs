@@ -581,6 +581,13 @@ first order dynamic logic の説明も満足にしていないのに、Java Card
 Java Card DL は first order dynamic logic のバリアントだそうです。
 
 ## sequent calculus
+
+* [sequent calculus (wikipedia:en)](http://en.wikipedia.org/wiki/Sequent_calculus)
+* [Verifying Object-Oriented Programs with KeY: A Tutorial](http://www.cse.chalmers.se/~philipp/publications/fmco06post.pdf)
+
+論理式が正当であることの導出方法にはいろいろあるわけで、その一つが sequent calculus です。
+KeY Prover が用いる Java Card DL に対する導出方法は sequent calculus であるという説明を読みました。
+
 ## SMT ソルバ
 ## Taclets
 
