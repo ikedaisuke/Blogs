@@ -577,7 +577,7 @@ JML の記述がわかってくれば、読めるのではないかと期待し�
 このプログラムはとてもシンプルです。
 しかし、ループに `x` が入っていることもあり、ループ不変量は自明ではありません。
 
-[Loop invariants: analysis, classification, and examples (pdf)](http://arxiv.org/abs/1211.4470)
+[Loop invariants: analysis, classification, and examples](http://arxiv.org/abs/1211.4470)
 には、たくさんの invariants が載っています。大変楽しいサーベイです。
 
 プログラム max1 のループ構造を変えて２個の変数で回してみます：
