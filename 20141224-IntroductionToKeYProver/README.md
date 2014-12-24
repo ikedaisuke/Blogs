@@ -35,7 +35,7 @@ KeY-project とはプログラム、特に Java (の subset) プログラムに�
 
 # KeY Prover の紹介
 
-KeY Prover は仕様記述言語 JML をアノテーションとして書いた
+KeY Prover は仕様記述言語 Java Modeling Language (JML) をアノテーションとして書いた
 Java プログラムの semi-automatic な検証ツールです。
 正確には Java のサブセットである Java Card プログラムを対象とします。
 
@@ -44,7 +44,8 @@ JML の代わりに Object Constraint Language (OCL) も使うことができる
 
 筆者が理解した Key Prover の構成は以下のようになります：
 
-(figure)
+![img/KeyProver1.png](/20141224-IntroductionToKeYProver/img/KeyProver1.png?raw=true)
+![img/KeyProver2.png](/20141224-IntroductionToKeYProver/img/KeyProver2.png?raw=true)
 
 利用者は Java Card のプログラムと JML 仕様記述で書かれたアノテーションを準備します。
 あとは、証明ボタンを押すだけです。
@@ -64,6 +65,7 @@ semi-automatic な検証ツールであるというのは、いくつかの人�
     * ループ不変量は十分か
     * ループ変量は十分か
 * Java Card DL の限界は？ (timed out/out of memory)
+    * open goal を証明するために利用者が追加する axiom は何か？
 * SMT ソルバの限界は？ (timed out/out of memory)
 * 証明しやすいプログラムと証明しにくいプログラムの違いは？
 
@@ -76,7 +78,7 @@ Java を日常書かない筆者も、手続き型プログラムの正しさを
 
 SMT ソルバとして Z3 を用いると、counter examples と tests が生成されます。
 Z3 の出力が読めないと、これらを理解することは難しそうで、筆者にはできませんでした。
-こういう部分は SMT ソルバマニアの知識が生きる場面です。
+こういう部分は SMT ソルバ Z3 マニアの知識が生きる場面です。
 
 ## Java Card
 ## JML
