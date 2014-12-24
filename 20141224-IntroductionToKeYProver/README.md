@@ -535,6 +535,109 @@ public class ElemIndex {
 
 ### Max
 
+本稿でとりあげる最後の具体例は、整数成分の空でない配列の最大値を求めるプログラムです。
+KeY の配布物 examples にある 03-SumAndMax の中に sum と max を計算するプログラムがあるのですが、
+そのなかから max を抜き出します。
+
+max のループに変数 i を一つ使うので max1 と命名しています。
+
+```Java
+public class Max {
+
+  /*@ requires (a != null && a.length > 0);
+    @ ensures (\forall int k; 0 <= k && k < a.length; a[k] <= \result);
+    @ ensures (\exists int k; 0 <= k && k < a.length; a[k] == \result);
+    @*/
+  public static /*@ pure @*/ int max1(int[] a) {
+    int i, x = a[0];
+
+    /*@ loop_invariant
+      @   0 <= i && i <= a.length &&
+      @     (\forall int k; 0 <= k && k < i; a[k] <= x) &&
+      @     (i == 0 ==> x == a[0]) &&
+      @     (i > 0 ==> (\exists int k; 0 <= k && k < i; a[k] == x));
+      @ assignable i, x;
+      @ decreases a.length - i;
+      @*/
+    for (i = 0; i < a.length; i++) {
+        if (x < a[i]) {
+        x = a[i];
+        }
+    }
+    return x;
+  }
+}
+```
+
+事前条件、事後条件、ループ不変量、ループ変量の説明をしなかったけれども、
+JML の記述がわかってくれば、読めるのではないかと期待しています。
+
+このプログラムはとてもシンプルです。
+しかし、ループに `x` が入っていることもあり、ループ不変量は自明ではありません。
+
+[Loop invariants: analysis, classification, and examples (pdf)](http://arxiv.org/abs/1211.4470)
+には、たくさんの invariants が載っています。大変楽しいサーベイです。
+
+プログラム max1 のループ構造を変えて２個の変数で回してみます：
+
+```Java
+    /*@ requires (a != null && a.length > 0);
+      @ ensures (\forall int k; 0 <= k && k < a.length; a[k] <= \result);
+      @ ensures (\exists int k; 0 <= k && k < a.length; a[k] == \result);
+      @*/
+    public static /*@ pure @*/ int max2(int[] a) {
+    int i = 0, j = a.length - 1;
+
+    /*@ loop_invariant
+      @   0 <= i && i <= j && j < a.length &&
+      @   (\forall int k; (0 <= k && k < i) || (j < k && k < a.length);
+      @     a[k] <= a[i] || a[k] <= a[j]);
+      @ assignable i, j;
+      @ decreases j - i;
+      @*/
+    while (i != j) {
+        if (a[i] > a[j]) {
+        j--;
+        } else {
+        i++;
+        }
+    }
+    return a[i];
+    }
+```
+
+max2 は max1 と全く同じ事前条件/事後条件です。
+ただし max2 のループのなかで変化するのは index `i` と `j` だけです。
+
+ループ不変量を書くのは同じように自明ではありません。
+しかし、max1 のループ不変量から事前条件/事後条件を証明することと、
+max2 のループ不変量から事前条件/事後条件を証明することは、違います。
+「自動定理証明に優しい」のは max2 のほうです。
+理由は上記サーベイを参照してください。
+
+実際 KeY Prover でベンチマークを取ってみました：
+
+<dl>
+<dt>
+max1
+</dt>
+<dd>
+![img/Max/stat1.png](/20141224-IntroductionToKeYProver/img/Max/stat1.png?raw=true)
+</dd>
+<dt>
+max2
+</dt>
+<dd>
+![img/Max/stat2.png](/20141224-IntroductionToKeYProver/img/Max/stat2.png?raw=true)
+</dd>
+</dl>
+
+誤差の範疇かもしれませんが、max2 のほうが証明が速く済んでいるようです。
+
+このように、自動証明を早くするために、
+「プログラムの意味を変えないまま、自明でないプログラムを書く」ことができます。
+これでは本末転倒のようですが、これはこれで面白い話題でしょう。
+
 # KeY Prover を支える技術
 
 ここまで、簡単な具体例を見てきました。
