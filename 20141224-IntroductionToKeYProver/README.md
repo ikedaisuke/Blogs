@@ -6,8 +6,10 @@
 
 ## KeY-project とは
 
-KeY-project とはプログラム、特に Java (の subset) プログラムに対する形式手法のための
-ツール群です。The KeY Book (2007) によれば、以下の大学の共同プロジェクトです：
+[KeY-project](http://www.key-project.org/) とはプログラム、
+特に Java (の subset) プログラムに対する形式手法のためのツール群です。
+[The KeY Book (2007)](http://www.key-project.org/thebook/) によれば、
+以下の大学の共同プロジェクトです：
 
 * University of Karlsruhe
 * Chalmers University of Technology in Göteborg
@@ -140,7 +142,7 @@ KeY Cheat Sheet も参照してください。
 KeY Prover をインストールするには、
 
 1. Java Runtime (JRE) をあらかじめ準備し
-2. (download)[http://www.key-project.org/download/] を読んで
+2. [KeY 2 download](http://www.key-project.org/download/) を読んで
 3. README-(version).txt を読んで
 4. KeY-(version).tgz or KeY-(version).zip をダウンロード、展開し
 5. required libraries をダウンロードして、適切な場所に展開します
@@ -898,4 +900,3 @@ Java Card DL
 </ul>
 </dd>
 </dl>
-
