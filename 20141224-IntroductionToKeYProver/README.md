@@ -740,29 +740,57 @@ semi-automatic 証明支援系に SMT ソルバをつなぐ」というツール
 
 # 参考文献
 
-test GitHub flavored markup sanitizing
+参考文献を詳しく作る暇がないので、おおざっぱな分類のもとにリンクを張りました。
+URL や PDF の名前から推測して、興味があれば読んでみてください。
+本稿ですでに引用したリンクは、次のリストにあったりなかったりします。
 
 <dl>
 <dt>
-term
-</dt>
-<dd>
-desc
-</dd>
-<dt>
-term
+KeY
 </dt>
 <dd>
 <ul>
-<li> foo
-<li> bar
+<li> https://moodle.risc.jku.at/pluginfile.php/4859/course/section/880/07-key.pdf
+<li> http://www.cse.chalmers.se/~philipp/publications/fmco06post.pdf
+<li> http://i12www.iti.kit.edu/~key/doc/2005/sosym.pdf
+<li> http://i12www.iti.uni-karlsruhe.de/~key/case_studies/mondex.pdf
+<li> http://i12www.iti.uni-karlsruhe.de/~key/DeduSec/2013_Wagner_TraceSpecification.pdf
+<li> http://www.mathlibre.org/wiki/index.php?KeYmaera
+<li> http://d.hatena.ne.jp/ehito/20131003/1380770265
+<li> http://www.informatik.uni-bremen.de/uitp03/entcs/04-Giese.pdf
+<li> http://i12www.iti.uni-karlsruhe.de/~key/download/keycheat.pdf
+<li> http://wwwhome.ewi.utwente.nl/~mostowskiwi/papers/key2014.pdf
+<li> http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.32.9847
+<li> https://www.tu-braunschweig.de/Medien-DB/isf/sse/12_dynamiclogiccalculus_vl.pdf
+</ul>
+</dd>
+<dt>
+</dt>
+JML
+<dd>
+<ul>
+<li> http://www.eecs.ucf.edu/~leavens/JML/jmldbc.pdf
+<li> http://i12www.ira.uka.de/~pschmitt/FSS/FormSpec.pdf
+<li> http://www.chimaira.org/docs/JavaAndJML.htm
+</ul>
+</dd>
+<dt>
+Java Card DL
+</dt>
+<dd>
+<ul>
+<li> http://symbolaris.com/course/dcd/08-JavaDL.pdf
+<li> https://lfm.iti.kit.edu/download/javaDL.pdf
+</ul>
+</dd>
+<dt>
+その他
+</dt>
+<dd>
+<ul>
+<li> http://formal.iti.kit.edu/~beckert/pub/beckertHaehnleIntSyst2014.pdf
+<li> http://www.inf.ethz.ch/personal/basin/pubs/bcvjar.pdf
 </ul>
 </dd>
 </dl>
-
-
-
-
-
-
 
