@@ -82,7 +82,26 @@ SMT ソルバとして Z3 を用いると、counter examples と tests が生成
 Z3 の出力が読めないと、これらを理解することは難しそうで、筆者にはできませんでした。
 こういう部分は SMT ソルバ Z3 マニアの知識が生きる場面です。
 
+証明に失敗したときにやることは多いので、証明に成功するための必要最小限の記法について、まず説明します。
+
 ## Java Card
+
+Java Card は Java のサブセットです。
+
+* [An Introduction to Java Card Technology - Part 1](http://www.oracle.com/technetwork/java/javacard/javacard1-139251.html)
+* [Java Card Language (Wikipedea:en)](http://en.wikipedia.org/wiki/Java_Card#Language)
+
+[fmco06post.pdf](http://www.cse.chalmers.se/~philipp/publications/fmco06post.pdf)
+によれば、Key Prover が対象とするのは full Java Card 2.2.1 standard だそうです。
+
+筆者は Java と Java Card の違いを理解していませんが、Java のフルセットを検証するのは無茶だろうということは推測できます。
+
+persistent/tranient memory model と atomic transactions の検証ができるそうです。
+
+あるメソッドを KeY Prover で検証するためには、そのメソッドが呼び出しているメソッド全てが検証済みでなければなりません。
+従って、標準ライブラリ（例えば `import java.io.*`）とかを使っているメソッドは現時点では検証できません。
+まずは簡単なメソッドを検証してみましょう。
+
 ## JML
 ## 具体例
 
