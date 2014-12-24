@@ -530,8 +530,14 @@ public class ElemIndex {
 ### Max
 
 # KeY Prover を支える技術
-## Hoare logic & first order dynamic logic
-### Java Card DL
+
+ここまで、簡単な具体例を見てきました。
+これは料理番組でいえば、材料や調理法を見せた後で、
+「出来上がりはこちらになります」と盛りつけた皿を見せるようなものです。
+
+この文中には十分に説明していなかったキーワードや技術がたくさんでてきたので、
+そろそろこの節で簡単な説明をします。
+
 ## sequent calculus
 ## SMT ソルバ
 ## Taclets
