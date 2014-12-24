@@ -725,7 +725,9 @@ Key Prover だけでなく KeY project の目標は The KeY book によれば
 > logic, and mathematics. To advance the field of program verification, we must
 > facilitate the acquisition of these skills for our colleagues, students, and
 > other tool builders.
+> 
 > (snip)
+> 
 > The ultimate goal of program verification is not the theory behind the tools
 > or the tools themselves, but the application of the theory and tools in the
 > software engineering process. Our society relies on the correctness of a vast
