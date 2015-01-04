@@ -6,6 +6,11 @@ Check each (%Y%m%d-name)/README.md in the subdirectories.
 
 Issues on GitHub, and/or tweets to @ikegami__ are welcome.
 
+Remark
+======
+To write an article with MathJax,
+I have [another repo at bitbacket](https://bitbucket.org/IKEGAMIDaisuke/notes).
+
 Links
 =====
 
